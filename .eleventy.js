@@ -31,7 +31,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addJavaScriptFunction("image", imageShortcode);
 
     return {
-      pathPrefix: "{{ "/" | url }}",
+      pathPrefix: "/test11ty",
         dir: {
             input: "src",
             output: "docs",
