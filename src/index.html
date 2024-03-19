@@ -1,0 +1,94 @@
+---
+title: Sabine Conlin
+layout: base.njk
+css_include_nav: /css/nav.css
+css_include_home: /css/home.css
+---
+<div class="container">
+    <section class="hero">
+    </section>
+    <section class="subnav">
+        <p class="hero-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <div class="subnav-box">
+            <div class="parallax-circle">
+                {% image "./src/img/vio400.svg", "circle", "(min-width: 300px) 30vw, 30vw" %}
+                <div class="subnav-links">
+                    <a href="#nav">WORK</a>
+                    <a href="#info">ABOUT</a>
+                    <a href="#info">CONTACT</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-1">
+        <div class="outer">
+            <div class="inner">
+            <a href="{{'/project-1/' | url}}">
+                <h2>UX / UI</h2>
+                <h1>EXAMPLE WEBSITE / APP</h1>
+                <h3>0-1 design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum suscipit doloremque, iusto aliquam ipsam nemo quis ullam!</p>
+            </div>
+            <div class="inner">
+                {% image "./src/img/img400.svg", "image wireframe", "(min-width: 200px) 30vw, 30vw" %}
+            </div>
+            </a>
+        </div>
+        <hr class="fadeInLeft" />
+    </section>
+
+    <section class="content-2">
+        <div class="outer">
+                <div class="inner">
+                <a href="{{'/project-2/' | url}}">
+                    <h2>UX / UI</h2>
+                    <h1>EXAMPLEWEBSITE.COM</h1>
+                    <h3>Website redesign</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum suscipit doloremque, iusto aliquam ipsam nemo quis ullam!</p>
+                </div>
+                <div class="inner">
+                    {% image "./src/img/img400.svg", "image wireframe", "(min-width: 200px) 30vw, 30vw" %}
+                </div>
+                </a>
+        </div>
+        <hr class="fadeInLeft" />
+    </section>
+
+    <section class="content-3">
+        <div class="outer">
+            <div class="inner">
+                <a href="{{'/project-3/' | url}}">
+                    <h2>UX / UI</h2>
+                    <h1>EXAMPLE APP / WEBSITE </h1>
+                    <h3>Enhancement of feature</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum suscipit doloremque, iusto aliquam ipsam nemo quis ullam!</p>
+                </div>
+            <div class="inner">
+                {% image "./src/img/img400.svg", "image wireframe", "(min-width: 200px) 30vw, 30vw" %}
+            </div>
+            </a>
+        </div>
+        <hr class="fadeInLeft" />
+    </section>
+
+    <section class="about" id="info">
+        <p class="info-heading">About</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, officiis? Consequuntur inventore ex, aut id nemo aspernatur autem repudiandae voluptatibus quaerat voluptas saepe tenetur doloremque, omnis provident eum praesentium dolorum?
+        </p>
+        <br>
+    </section>
+
+    <section class="contact" id="info">
+        <p class="info-heading">Contact</p>
+        <p>Additional info</p>
+        <a class="contact-btn" href="mailto:sabcon@"><span>Let's connect</span></a>
+        <br class="fadeInLeft">
+    </section>
+    
+    <section class="bnav">
+        <div>
+            <a href="#nav" class="back-top-link">↑ back to top</a>
+        </div>
+    </section>
+</div>

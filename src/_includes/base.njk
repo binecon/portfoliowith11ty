@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+   
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="{{'/images/favicon.svg' | url }}" />
+    <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/font.css' | url }}">
+    
+    {% if css_include_nav %}
+      <link rel="stylesheet" href="{{ css_include_nav | url }}" />
+    {% endif %}
+    {% if css_include_home %}
+      <link rel="stylesheet" href="{{ css_include_home | url }}" />
+    {% endif %}
+    {% if css_include_pro %}
+      <link rel="stylesheet" href="{{ css_include_pro | url }}" />
+    {% endif %}
+     {% if css_include_cre %}
+      <link rel="stylesheet" href="{{ css_include_cre | url }}" />
+    {% endif %}
+
+
+    
+    
+    
+    <title>Sabine Conlin</title>
+  </head>
+  {% include "nav.njk" %}
+    
+  <body>
+
+  <main class="">
+    {{ content | safe }}
+    </main>
+    {% include "footer.njk" %}
+
+
+  </body>
+
+</html>
