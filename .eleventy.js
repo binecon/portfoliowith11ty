@@ -22,9 +22,9 @@ async function imageShortcode(src, alt, sizes) {
 
 module.exports = function (eleventyConfig) {
 
-    eleventyConfig.addPassthroughCopy("./src/css");
+    eleventyConfig.addPassthroughCopy("src/css");
     eleventyConfig.addPassthroughCopy(".img");
-    eleventyConfig.addWatchTarget("./src/css/");
+    eleventyConfig.addWatchTarget("src/css");
 
     eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
     eleventyConfig.addLiquidShortcode("image", imageShortcode);
@@ -32,7 +32,7 @@ module.exports = function (eleventyConfig) {
 
     return {
         dir: {
-          pathPrefix: "/",
+          pathPrefix: "/test11ty",
             input: "src",
             output: "docs",
         }
