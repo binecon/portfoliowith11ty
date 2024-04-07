@@ -24,7 +24,6 @@
 // }
 
 module.exports = function (eleventyConfig) {
-  // const baseUrl = "http://localhost:8080/test11ty/";
 
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/images");
@@ -39,7 +38,7 @@ module.exports = function (eleventyConfig) {
   // eleventyConfig.addJavaScriptFunction("image", imageShortcode);
 
   return {
-    pathPrefix: "/test11ty/",
+    pathPrefix: "/portfoliowith11ty/",
     dir: {
       input: "src",
       output: "docs",
