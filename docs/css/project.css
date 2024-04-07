@@ -52,8 +52,8 @@
 /* details styling */
 .outer { display: flex; flex-wrap: wrap; align-items: center; gap: 1.5em; }
 .inner { flex-basis: 350px; }
-.desc { max-width: 400px; text-align: right; }
-.brief > img { max-width: 100%; }
+.desc { max-width: 500px; text-align: right; }
+.inner > img { max-width: 500px; }
 .chapter { max-width: 75%; margin: 1em 0 1em 0; }
 .cta {
     display: flex;
@@ -95,3 +95,16 @@
         max-width: fit-content;
     } 
 } 
+
+/* .action {
+    z-index: -1;
+    scale: .9; opacity: 0;
+    background-color: bisque;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 100px 450px;
+}
+
+@keyframes fade-in {
+    to {scale: 1; opacity: 1;}
+} */

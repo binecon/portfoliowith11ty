@@ -1,10 +1,10 @@
 ---
-title: SC - project-1
+title: Sabine Conlin - project-1
 layout: base.njk
 css_include_pro: /css/project.css
 ---
 <div class="container">
-<section class="brief">
+    <section class="brief">
         <div class="outer">
             <div class="inner desc">
                 <h2>Category</h2>
@@ -18,10 +18,10 @@ css_include_pro: /css/project.css
                 </div>
             </div>
             <div class="inner">
-                <img eleventy:ignore alt="p1" src="{{'./src/img/img400.svg' | url}}" />
+                <img src="{{'/images/img400.svg' | url}}" />
             </div>
         </div>
-</section>
+    </section>
 
 <section class="situation">
     <div class="chapter">
@@ -46,7 +46,7 @@ css_include_pro: /css/project.css
 
 <section class="result">
     <div class="chapter">
-        <h2>Result</h2>
+        <h2>Results and Reflections</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum repellat accusamus illum itaque dolores, omnis eligendi facere asperiores numquam fugiat dolorem ipsum veniam quas, ducimus soluta, voluptatum ipsa dolor corrupti.</p>
     </div>
 </section>
@@ -55,6 +55,7 @@ css_include_pro: /css/project.css
     <div class="chapter">
         <div class="cta">
         <span>If you'd like to discuss any of my case studies, please reach out.</span>
+        <br><br>
         <a class="contact-btn" href="mailto:sabcon@"><span>Let's connect</span></a>
     </div>
     </div>
@@ -62,7 +63,7 @@ css_include_pro: /css/project.css
 
 <section class="bnav">
     <div class="bnav-link">
-        <a href="{{'/project-2/' | url}}" class="next-link">→ next project</a>
+        <a href="{{'/' | url}}" class="next-link">→ next</a>
     </div>
 </section>
 </div>

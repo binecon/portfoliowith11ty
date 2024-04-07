@@ -1,6 +1,5 @@
 .navbar {
-    /* background-color: rgb(243, 241, 241); */
-    background: pink;
+    background-color: rgb(243, 241, 241);
     display: flex;
     justify-content: space-between;
     margin: 0;
@@ -20,7 +19,7 @@
     display: none;
 }
 .rahmen {
-    /* background-color: rgb(243, 241, 241); */
+    background-color: rgb(243, 241, 241);
     width: 45px;
     height: 38px; 
     position: relative;
@@ -39,8 +38,7 @@
 ul {
     z-index: 3;
     list-style-type: none;
-    /* background-color: rgb(243, 241, 241); */
-    background: #FFE4C4;
+    background-color: rgb(243, 241, 241);
     position: absolute;
     top: 3em;
     right: 0.5em;

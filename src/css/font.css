@@ -1,8 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 
+body {
+    font-family: "Inconsolata", monospace;
+    font-size: 16px;
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+  }
+
+  /* h1 { margin: 0 0 .2em 0; font-size: 2.8em; font-weight: 500;
+    } */
+     
 h1 {
         font-size: calc(1.3em + 3vw);
-        font-weight: 400;
+        font-weight: 500;
         line-height: calc(1.1em + 0.5vw); 
         margin: 0 0 0.3em 0;
     }
@@ -10,7 +22,7 @@ h1 {
     h1 {
       margin: 0 0 0.3em 0;
       font-size: 42px;
-      font-weight: 400;
+      font-weight: 600;
       line-height: calc(1.1em + 0.5vw); 
     }   
 }
@@ -22,10 +34,52 @@ h1 {
   .info-heading { margin: 0 0 .5em 0; font-size: 2.3em; font-weight: 500; }
   .hero-text { margin: 0 0 .5em 0; font-size: 1.2em; font-weight: 400; line-height: 1.3em; }
   .subnav-links { margin: 0 0 .5em 0; font-size: 1.3em; font-weight: 400; line-height: 1.7em; }
-  .nav-logo { margin: 0 0; font-size: 1.4em; color: white; }
+  .nav-logo { margin: 0 0; font-size: 1.4em; }
   
 
+  
+  
+
+
+
+
+
+
+
+
+
+     
+
+
+/* .hero-text {
+    font-size:x-large;
+    font-weight: 500;
+    line-height: calc(1.1em + 0.5vw); 
+}
+.subnav-links > a{
+    font-size:x-large;
+    line-height: calc(1.4em + 0.5vw); 
+}
+.brief-facts > li {
+    font-weight: 600; 
+    line-height: calc(1.1em + 0.5vw); 
+} */
+
+
+
+
+/* Prevent iOS and IE text size adjust after device orientation change, without disabling user zoom. */
+/* html { */
+    /* -ms-text-size-adjust: 100%; */
+    /* 2 */
+    /* -webkit-text-size-adjust: 100%; */
+    /* 2 */
+
+
 /* nav logo*/
+.nav-logo {
+    color: blue;
+}
 .nav-logo:hover {
     transform: skew(-30deg, -4deg);
 }
@@ -75,6 +129,6 @@ h1 {
     font-style: italic;
 }
 .footer-links:active {
-    text-decoration: underline;
+    text-decoration: line-through;
     font-style: italic;
 }
