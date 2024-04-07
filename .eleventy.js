@@ -39,7 +39,7 @@ module.exports = function (eleventyConfig) {
   // eleventyConfig.addJavaScriptFunction("image", imageShortcode);
 
   return {
-    pathPrefix: "/portfoliowith11ty/",
+    pathPrefix: "/test11ty/",
     dir: {
       input: "src",
       output: "docs",
