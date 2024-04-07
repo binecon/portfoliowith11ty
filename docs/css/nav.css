@@ -1,0 +1,101 @@
+.navbar {
+    background-color: rgb(243, 241, 241);
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0.8em 0 0 1em;
+}
+.back-home {
+    padding-right: 25px;
+}
+.bnav-link {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 25px;
+}
+
+/* hamburger menu */
+.navigation {
+    display: none;
+}
+.rahmen {
+    background-color: rgb(243, 241, 241);
+    width: 45px;
+    height: 38px; 
+    position: relative;
+}
+.linie {
+    background-color: black;
+    width: 28px;
+    height: .16em;
+    position: absolute;
+    left: 2px;
+}
+.einsham { top: 4px; }
+.zweiham { top: 12px; }
+.dreiham { top: 20px; }
+
+ul {
+    z-index: 3;
+    list-style-type: none;
+    background-color: rgb(243, 241, 241);
+    position: absolute;
+    top: 3em;
+    right: 0.5em;
+    width: 100%;
+    text-align: right;
+}
+li {
+    display: inline-block;
+    padding: 0.5em 2em 1.2em 0;
+    font-size:large;
+    font-weight: 500;    
+}
+li:hover {
+    text-decoration: underline;
+    font-style: italic;
+}
+li:active {
+    text-decoration: line-through;
+    font-style: italic;
+}
+#click {
+    display: none;
+}
+#click ~ul {
+    display: none;
+}
+#click:checked ~ ul { 
+    display: block;
+    opacity: 0;
+    transform: translateY(-50%);
+    animation: SlideInFromTop 300ms linear forwards;
+}
+@keyframes SlideInFromTop {
+    to {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .fixnav {
+        position: fixed;
+        width: 100vw;
+    }
+    .navigation {
+        display: block;
+    }
+    .back-home {
+        display: none;
+    }
+}
+@media only screen and (min-width: 801px) {
+    .back-home {
+        display: block;
+    }
+}
+
